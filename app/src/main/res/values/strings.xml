@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">NexHelper</string>
+
+
+    <string name="vivo_account_password">vivo_account_password</string>
+    <string name="auto_input_passwd">auto_input_passwd</string>
+    <string name="auto_remove_apk">auto_remove_apk</string>
+    <string name="autoinstall_enable">autoinstall_enable</string>
+    <string name="autoinstall_accept_source">autoinstall_accept_source</string>
+
+    <string name="noti_permission">noti_permission</string>
+    <string name="noti_remove_dev_warn">noti_remove_dev_warn</string>
+    <string name="noti_remove_draw_warn">noti_remove_draw_warn</string>
+    <string name="noti_remove_title">noti_remove_title</string>
+    <string name="noti_remove_title_app_list">noti_remove_title_app_list</string>
+
+    <string-array name="app_sources">
+        <item>未知来源(包括Adb和Google Play)</item>
+        <item>所有来源</item>
+    </string-array>
+
+    <string-array name="app_sources_value">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+
+    <string name="autoinstall_service_description">Vivo AutoInstall Service</string>
+
+    <string name="keyword_from">来自</string>
+    <string name="keyword_version">版本</string>
+    <string name="keyword_install1">继续安装</string>
+    <string name="keyword_install2">安装</string>
+    <string name="keyword_install_done">安装完成</string>
+    <string name="keyword_install_failed">安装失败</string>
+    <string name="keyword_done">完成</string>
+    <string name="keyword_remove_apk">安装后删除安装包</string>
+    <string name="keyword_use_password">vivo帐号验证</string>
+    <string name="keyword_try_to_install">试图安装</string>
+    <string name="keyword_ok">确定</string>
+    <string name="keyword_unknown_source">未知来源</string>
+</resources>

@@ -1,0 +1,17 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- These settings headers are only used on tablets. -->
+
+    <header
+            android:fragment="cat.dcat.nexhelper.ui.AutoInstallPreferenceFragment"
+            android:title="自动安装"
+            android:icon="@drawable/ic_info_black_24dp"/>
+
+    <header
+            android:fragment="cat.dcat.nexhelper.ui.NotificationFilterPreferenceFragment"
+            android:title="通知优化"
+            android:icon="@drawable/ic_info_black_24dp"/>
+    <header
+            android:title="By DCat /// 2019/02/15"
+            android:icon="@drawable/ic_info_black_24dp"/>
+</preference-headers>

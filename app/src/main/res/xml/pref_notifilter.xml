@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            android:title="权限">
+
+        <SwitchPreference
+                android:defaultValue="false"
+                android:title="通知读取权限"
+                android:summaryOn="已启用"
+                android:summaryOff="已停用"
+                android:key="@string/noti_permission"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+            android:title="功能">
+
+        <CheckBoxPreference
+                android:defaultValue="false"
+                android:title="移除Vivo开发者模式警告"
+                android:summary="emmmmm"
+                android:key="@string/noti_remove_dev_warn"/>
+        <Preference
+                android:title="移除在应用上层绘制警告"
+                android:key="@string/noti_remove_draw_warn"
+                />
+        <CheckBoxPreference
+                android:defaultValue="false"
+                android:title="移除常驻通知的标题栏"
+                android:summary="使通知更加简洁，效果随缘"
+                android:key="@string/noti_remove_title"/>
+
+
+    </PreferenceCategory>
+    <PreferenceCategory
+            android:title="其他">
+        <Preference
+                android:title="刷新"
+                android:key="noti_refresh"
+                />
+    </PreferenceCategory>
+</PreferenceScreen>

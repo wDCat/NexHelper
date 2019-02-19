@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            android:title="权限">
+
+        <SwitchPreference
+                android:defaultValue="false"
+                android:title="辅助服务状态"
+                android:summaryOn="已启用"
+                android:summaryOff="已停用"
+                android:key="autoinstall_service_state"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+            android:title="密码">
+
+        <SwitchPreference
+                android:defaultValue="false"
+                android:title="自动输入密码"
+                android:key="@string/auto_input_passwd"/>
+        <EditTextPreference
+                android:password="true"
+                android:defaultValue="-"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:title="账户密码"
+                android:key="@string/vivo_account_password"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+            android:title="安装">
+        <SwitchPreference
+                android:defaultValue="false"
+                android:title="自动安装"
+                android:summaryOn="已启用"
+                android:summaryOff="已停用"
+                android:key="@string/autoinstall_enable"/>
+        <ListPreference
+                android:defaultValue="0"
+                android:title="允许的来源"
+                android:dependency="@string/autoinstall_enable"
+                android:entries="@array/app_sources"
+                android:entryValues="@array/app_sources_value"
+                android:key="@string/autoinstall_accept_source"/>
+        <CheckBoxPreference
+                android:defaultValue="true"
+                android:title="不自动删除安装包"
+                android:summary="是否自动选中'安装后删除安装包'选项"
+                android:key="@string/auto_remove_apk"
+                android:dependency="@string/autoinstall_enable"
+                />
+    </PreferenceCategory>
+</PreferenceScreen>
